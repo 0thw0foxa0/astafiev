@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../src/btn_scroll/scroll.css">
     <title>Document</title>
     <style>
         body{
@@ -13,7 +14,10 @@
        </style>
 </head>
 <body>
- 
+    <div class="scroll_panel">
+        <a href="#" id="scroll_top"><span>↑ Наверх</span></a>
+        <a href="#" id="scroll_bottom"><span>↓ Вниз</span></a>
+    </div>
     <section class=" w-screen h-screen  ">
        
         <div class="h-full w-screen flex items-center bg-center bg-no-repeat  bg-cover " id="background_div">
@@ -35,9 +39,9 @@
                 <p class="  py-10 text-[2vh]  table-cell pr-9 text-right">
                     В.П. Астафьев ‒ один из ярких представителей деревенской прозы. Он посвятил теме русской деревни ряд произведений, среди которых есть образец деревенской прозы ‒ повесть «Последний поклон».
                 </p>
-                <div class="container w-[60%] h-[30%]  m-auto">
-        <p class="text-center text-[3vh] "> Последний поклон</p>
-        <p>
+            <div class="container w-[60%] h-[50%]  m-auto">
+                <p class="text-center text-[3vh] "> Последний поклон</p>
+                <p>
             В 1968 г. была издана повесть «Последний поклон», которая состояла из 15 рассказов. В.П. Астафьев отразил в цикле свой личный опыт. 
 
 История создания «Последнего поклона» — это история поиска жанра, которая началась с командировки Виктора Петровича на Красноярскую ГЭС в 1957 г. Писатель был возмущен, как люди, владеющие пером, безответственно и хвастливо описывали Сибирь в своих произведениях. Астафьев посчитал, что необходимо рассказать о своих земляках, о природе Сибири и о своих родных людях. 
@@ -51,30 +55,59 @@
 
 Познакомиться ближе с некоторыми рассказами «Последнего поклона» мы предлагаем с помощью интерактивной картинки. Мы приглашаем вас в одну из комнат дома бабушки и дедушки Виктора Петровича, где мы спрятали 7 символов для каждого рассказа. Нажимайте на символы и узнавайте историю произведений.
 
-        </p>
-                </div>
-                <div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%;">
-                    <video class="loader-genially" autoplay="autoplay" loop="loop" playsinline="playsInline" muted="muted" style="position: absolute;top: 45%;left: 50%;transform: translate(-50%, -50%);width: 80px;height: 80px;margin-bottom: 10%"><source src="https://static.genial.ly/resources/loader-default.mp4" type="video/mp4" />Your browser does not support the video tag.
-                    </video>
-                    <div id="655b1af46ea5a80012a573c5" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;">
-                    </div>
-                    </div>
-                    <script>
-                    (function (d) {
-                         var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0];
-                          if (d.getElementById(id)) {
-                             return; 
-                            } 
-                            js = d.createElement("script"); 
-                          js.id = id;
-                           js.async = true; 
-                           js.src = "https://view.genial.ly/static/embed/embed.js";
-                            ref.parentNode.insertBefore(js, ref); 
-                        }(document));
-                    </script>
+                </p>
+        </div>
+        <object data="" type=""></object>
+                
+
 
     </section >
-       
-  
+    <section class=" h-screen w-screen content-center flex">
+        <div class="container-wrapper-genially  " style="position: relative; min-height: 400px;  max-width: 100%;">
+            <video class="loader-genially" autoplay="autoplay" loop="loop" playsinline="playsInline" muted="muted" style="position: absolute;top: 45%;left: 50%;transform: translate(-50%, -50%);width: 80px;height: 80px;margin-bottom: 10%"><source src="https://static.genial.ly/resources/loader-default.mp4" type="video/mp4" />Your browser does not support the video tag.
+            </video><!--   это загрузка  -->
+                <div id="655b1af46ea5a80012a573c5" class="genially-embed content-center " style="margin: 0px auto; position: relative; height: auto; width: 60%;">
+                </div>
+        </div>
+            <script>
+            (function (d) {
+                 var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0];
+                  if (d.getElementById(id)) {
+                     return; 
+                    } 
+                    js = d.createElement("script"); 
+                  js.id = id;
+                   js.async = true; 
+                   js.src = "https://view.genial.ly/static/embed/embed.js";
+                    ref.parentNode.insertBefore(js, ref); 
+                }(document));
+            </script>
+    </section>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+
+        $(function(){
+            $('#scroll_top').click(function(){
+                console.log($(window).height())
+                $('html, body').animate({scrollTop: 0}, 1000);
+                document.getElementById("scroll_bottom").style.display = "block";
+                document.getElementById("scroll_top").style.display = "none";
+                return false;
+            });
+            
+            $('#scroll_bottom').click(function(){
+                console.log($(window).height())
+                var scrollTop = $(window).scrollTop();
+                $('html, body').animate({scrollTop: $(window).height()  }, 1000);
+                document.getElementById("scroll_top").style.display = "block";
+                if( $(document).height() ==document.documentElement.scrollWidth ){
+
+                    document.getElementById("scroll_bottom").style.display = "none";
+                }
+                else {document.getElementById("scroll_bottom").style.display = "block";}
+                return false;
+            });
+        });
+        </script>  
 </body>
 </html>

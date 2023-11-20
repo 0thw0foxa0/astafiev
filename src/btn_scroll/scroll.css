@@ -5,6 +5,7 @@
 	left: 0;
 	width: 90px;
 	transition: background 0.2s ease;
+	z-index: 3;
 }
 .scroll_panel:hover {
 	background: #eee; 
@@ -22,6 +23,7 @@
 	text-align: center;
  	opacity: 0.5;
 	transition: background 0.2s ease;
+	z-index: 3;
 }
 #scroll_top span {
 	display: block;
@@ -46,6 +48,7 @@
 	text-align: center;
  	opacity: 0.5;
 	transition: background 0.2s ease;
+	z-index: 3;
 }
 #scroll_bottom span {
 	display: block;
