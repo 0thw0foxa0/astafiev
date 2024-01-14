@@ -20,8 +20,8 @@
     </div>
     <section class=" w-screen h-screen  ">
        
-        <div class="h-full w-screen flex items-center bg-center bg-no-repeat  bg-cover " id="background_div">
-            <img src="/img/creativy_main.jpg" class=" bg-center bg-no-repeat bg-cover opacity-70 h-full w-screen" alt="">
+        <div class="h-full w-screen flex items-center  " id="background_div">
+            <img src="/img/creativy_main.jpg" class=" bg-center bg-no-repeat  opacity-70 h-full w-screen" alt="">
                 <div class=" absolute  px-4 py-3  w-full text-center ">
                     <p class="text-center text-[8vh] text-white">Астафьев в творчестве</p> 
                     <p class="text-center text-[3vh] text-white">  о литературных творениях Виктора Петровича </p>
@@ -98,6 +98,56 @@
         <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
     </div>       
         
+    <div id="default-carousel" class="relative w-full  h-[50vh] pt-10" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-64 overflow-hidden rounded-lg md:h-[50vh]">
+             <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item>
+                <img src="../img/fish1.png" class="object-contain absolute block  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../img/fish2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../img/fish3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../img/fish4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../img/fish5.png" class="absolute block  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
 
     </section >
     
@@ -106,12 +156,61 @@
    
     
     
+    <section class="h-screen w-screen ">
+
+<p class=" text-center text-[3vh]"> Военная проза</p>
+<p class=" text-center text-[2vh]">Пастушка и пастух</p>
+<p class=" text-center"> «Тоска по «настоящему», по «моему» произведению томила меня, и я ощущал в себе к нему позывы, но что это, как это — не понимал», — так рождался замысел повести «Пастух и пастушка» по словам самого Астафьева.
+<br><br><br>
+    Идею текста Виктор Петрович вынашивал более 10 лет, затем, «совершенно обалделым и счастливым», за три дня написал черновик и принялся кропотливо шлифовать. В результате сохранилось несколько редакций повести.
+    Еще на ранних этапах работы Астафьев подозревал, что с публикацией текста могут возникнуть проблемы. Виктору Петровичу отказали в сначала в «Звезде», потом в «Знамени» и «Новом времени». Наконец, в 1971году, произведение напечатали в «Нашем современнике», но даже этим Астафьев не остался доволен — по его мнению, повесть вышла «ощипанной», «с отсечёнными крыльями и перебитой ногой». Виктор Петрович возвращался к тексту снова и снова, дорабатывал «любимое детище». Последняя редакция датируется 1989 годом.
+    «Дополняя, переписывая повесть, я всякий раз удалял бытовую упрощенность, от индивидуально-явных судеб и мыслей уходил все далее и далее к общечеловеческим»
+    </p>
+ <img src="../img/shepherd.jpg" alt="">
+
+ <p class=" text-center"> Сам автор описал повесть как «современную пастораль». Пастораль — пастушеская поэзия. В ней прославляется жизнь естественных людей на лоне природы в противопоставлении жизни городской. Астафьев «упаковывает» прозу о войне в поэтический жанр XVI-XVII веков. Он противопоставляет трогательные чувства и сентиментальное мироощущение с суровыми условиями войны. А кроме того, отражает важную часть «пастушеской поэзии» — тоску по светлому, идеальными, но, увы, несбыточному.
+
+    Пастораль бывает и музыкальной. В повести можно найти аллюзию на интермедию «Искренность пастушки» из оперы «Пиковая дама» П.И. Чайковского.
+    
+    «Знаешь, музыка была сиреневая...  Простенькая такая, понятная и сиреневая... Я почему-то услышал сейчас ту мызыку, и как танцевали двое – они она, пастух и пастушка. Лужайка зеленая. Овечки белые. Пастух и пастушка в шкурах.  Они любили друг друга, не стыдились любви и не боялись за нее. В доверчивости они были беззащитны.  Беззащитные недоступны злу - казалось мне прежде...»
+    
+    Предлагаем насладиться чувственной музыкой, звучащей в тон переживаниям героев.
+    </p>
+    </section>
+    
+    <section class=" h-screen w-screen">
+
+<p class=" text-center text-[3vh]"> Прокляты и убиты</p>
+<div class="flex">
+    <img src="../img/comrads.jpg" class="h-2/5 w-[30vw]">
+    <p>«И книга его выступила столь невозможной к привычному приятию, что общественности оставалось лучше не заметить, не слишком заметить её – либо неубедительно громить как «клевету». Перевесило первое», — так писал в своем очерке о романе Виктора Астафьева другой великий русский писатель Александр Исаевич Солженицын.
+    
+        Астафьев начал писать роман в 1990 году. Он задумывал его как трехтомник, но третьей книге не суждено было появиться на свет.
+        «Прокляты и убиты» — роман о Великой Отечественной войне, написанный человеком, который не понаслышке знал, что такое фронт. Это текст-травма, то есть основанный на травматическом жизненном и историческом опыте.
+        </p>
+</div>
+
+<div class=" flex">
+ <p>Текст лишен героического пафоса, но преисполнен обличительного. По мысли автора, во время войны народ противостоял не только внешнему врагу, но и внутреннему — в лице правящей партии. Как настоящий «деревенщик» Астафьев становится голосом простого народа с нелегкой судьбой. 
+        Личный опыт, помноженный на коллективную трагедию, неизбежно рождает мотивы насилия и раскаяния.
+        
+        «Уже за несколько дней до праздника мне тревожно, - свидетельствует он о самочувствии накануне Дня Победы, - я не могу найти себе места, мне хочется попросить у кого-то прощенья, покаяться перед теми, кто уже сгнил на бескрайних полях России и в чужом зарубежье, молиться Богу...»
+        
+        Выражая свой болезненный опыт на бумаге, Астафьев проходил своеобразную терапию — избавлялся от тяжелого груза воспоминаний и чувств.
+        </p>
+        <img src="../img/Товарищи..jpg"  class="h-[25vh] w-[30vw]">
+
+</div>
+    
+   
+    </section>
     
     
-    
-    
-    
-    
+    <section class="h-screen w-screen">
+
+
+
+    </section>
     
     
     
@@ -121,25 +220,29 @@
             <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
     <script>
 
-        $(function(){
+        $(document).ready(function(){
             $('#scroll_top').click(function(){
                 console.log($(window).height())
                 $('html, body').animate({scrollTop: 0}, 1000);
                 document.getElementById("scroll_bottom").style.display = "block";
                 document.getElementById("scroll_top").style.display = "none";
+                var scrollnow = window.pageYOffset
+             window.scrollTo(scrollnow, scrollnow-20-$(window).height());
                 return false;
             });
             
             $('#scroll_bottom').click(function(){
-                console.log($(window).height())
-                var scrollTop = $(window).scrollTop();
-                $('html, body').animate({scrollTop: $(window).height()  }, 1000);
-                document.getElementById("scroll_top").style.display = "block";
+                // console.log($(window).height())
+                // var scrollTop = $(window).scrollTop();
+                // $('html, body').animate({scrollTop: $(window).height()  }, 1000);
+                // document.getElementById("scroll_top").style.display = "block";
                 if( $(document).height() ==document.documentElement.scrollWidth ){
 
                     document.getElementById("scroll_bottom").style.display = "none";
                 }
                 else {document.getElementById("scroll_bottom").style.display = "block";}
+                var scrollnow = window.pageYOffset
+             window.scrollTo(scrollnow, scrollnow+20+$(window).height());
                 return false;
             });
         });
