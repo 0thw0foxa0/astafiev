@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../src/btn_scroll/scroll.css">
+    
     <title>Document</title>
     <style>
         body{
@@ -15,21 +15,28 @@
 </head>
 <body>
   
-    <section class=" w-full h-full  ">
+    <section class=" w-full h-3/6  ">
        
-        <div class="h-full w-full flex items-center  " id="background_div">
-            <img src="../img/creativy_main.jpg" class=" bg-center bg-no-repeat  opacity-70 h-full w-screen" alt="">
-                <div class=" absolute  px-4 py-3  w-full text-center ">
-                    <p class="text-center text-[8vh] text-white">Астафьев в творчестве</p> 
+        <div class="h-full w-full flex items-center  " >
+            <!-- <img src="http://www.biograph.ru/images/stories/chron3/astafiev31.jpg" alt=""> -->
+                <div class="  px-4 py-3  w-full text-center ">
+                    <p class="text-center text-[8vh] text-white">Астафьев <br> в творчестве</p> 
                     <p class="text-center text-[3vh] text-white">  о литературных творениях Виктора Петровича </p>
                 </div>
+        </div>
+        <div class=" w-full h-1/6 flex justify-center">
+<button class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Деревенская проза</button>
+
+<button class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Военная проза</button>
+
+<button class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Городская проза</button>
         </div>
     </section>
    
    
    
     <section class="w-full h-full">
-        <div class="  items-center mx-auto"> 
+        <div class="  items-center mx-auto pt-8"> 
             <div class=" w-3/5 items-center mx-auto">
                 <p class="text-center text-[5vh]"> « Деревенская проза » </p>
                 <p class="  text-[2vh]   text-start" > Деревенская проза – одно из направлений в литературе, которое получило развитие во второй половине ХХ века. Основная идея этого литературного направления заключается в описании сельской и деревенской жизни, когда большая часть народа начала покидать деревни и переезжать в города, отказываясь от исторических традиций жить и трудиться рядом с природой и могилами предков, от нравственных ценностей, передаваемых от поколения к поколению деревенскими жителями.
@@ -41,7 +48,7 @@
             
         </div>        
        
-            <div class=" items-center">
+            <div class=" items-center pt-8">
                 <div class=" w-3/5 mx-auto">
                     <p class="text-center text-[3vh] ">« Последний поклон » </p>
                     <p class=" text-[2vh]   text-start">
@@ -62,7 +69,25 @@
                 </div>
                 
         </div>
-        <object data="" type=""></object>
+        <div class="w-full h-3/6 flex  justify-center pt-8">
+            <div 
+            class="container-wrapper-genially justify-center" 
+            style="position: relative; min-height: 300px; max-width: 40%;">
+                <video 
+                class="loader-genially" 
+                autoplay="autoplay" 
+                loop="loop" 
+                playsinline="playsInline" 
+                muted="muted" 
+                style="position: absolute;top: 45%;left: 50%;transform: translate(-50%, -50%);width: 80px;height: 80px;margin-bottom: 10%">
+                    <source src="https://static.genial.ly/resources/loader-default.mp4" type="video/mp4" />Your browser does not support the video tag.
+                </video>
+                <div id="655b1af46ea5a80012a573c5" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"></div>
+            </div>
+            <script>(function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genial.ly/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));</script>
+
+        </div>
+        
 
     </section >
     <!-- <section class=" h-screen w-screen content-center ">
@@ -89,7 +114,7 @@
             </section> -->
    
             <section class="w-full h-full">
-                <div class="items-center">
+                <div class="items-center pt-8">
                     <div class=" w-3/5 mx-auto">
                     <p class="text-center text-[5vh]">« Царь-рыба »
 
@@ -167,10 +192,10 @@
    
     
     
-    <section class="h-screen w-screen ">
-<div class="w-3/5 mx-auto">
+    <section class="h-full w-full ">
+<div class="w-3/5 mx-auto pt-8">
     <p class=" text-center text-[6vh]">  Военная проза </p>
-    <p class=" text-center text-[5vh]">« Пастушка и пастух »</p>
+    <p class=" text-center text-[5vh] pt-8">« Пастушка и пастух »</p>
     <p class=" text-start text-[2vh]"> «Тоска по «настоящему», по «моему» произведению томила меня, и я ощущал в себе к нему позывы, но что это, как это — не понимал», — так рождался замысел повести «Пастух и пастушка» по словам самого Астафьева.
     
         Идею текста Виктор Петрович вынашивал более 10 лет, затем, «совершенно обалделым и счастливым», за три дня написал черновик и принялся кропотливо шлифовать. В результате сохранилось несколько редакций повести.
@@ -194,7 +219,7 @@
     
     <section class=" h-full w-full">
 
-<p class=" text-center text-[5vh]"> « Прокляты и убиты »</p>
+<p class=" text-center text-[5vh] pt-8"> « Прокляты и убиты »</p>
 <div class=" w-3/5 mx-auto">
     
     <p class="text-start text-[2vh]">«И книга его выступила столь невозможной к привычному приятию, что общественности оставалось лучше не заметить, не слишком заметить её – либо неубедительно громить как «клевету». Перевесило первое», — так писал в своем очерке о романе Виктора Астафьева другой великий русский писатель Александр Исаевич Солженицын.
@@ -293,7 +318,7 @@
         </button>
     </div>
 </div>
-    <div class="w-3/5 mx-auto">
+    <div class="w-3/5 mx-auto pt-8">
 
         <p class=" text-center text-[5vh]">Печальный детектив</p>
         <p class="text-start text-[2vh]">
@@ -310,7 +335,7 @@
    
 
 
-    <div id="default-carousel" class="relative w-3/5 mx-auto  h-[70vh] pt-10" data-carousel="slide">
+    <div id="default-carousel" class="relative w-3/5 mx-auto  h-[70vh] pt-8 " data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-full w-full overflow-hidden rounded-lg md:h-[70vh]">
              <!-- Item 1 -->
@@ -359,12 +384,21 @@
                 <span class="sr-only">Next</span>
             </span>
         </button>
-    </div>
-
+    </div >
+     
+  
     </section>
+   
+    <footer class="h-1/6 bg-[#404040] flex pt-8 mt-10">
     
-    
-    <footer class=" h-[15vh]"></footer>    
+        <a href="/index.html">
+            <p class="text-start text-[3vh] ml-5"> На главную</p>
+        </a>
+        <div class=" w-4/6"></div>
+        <a href="/subpages/podcast.html">
+            <p class="text-end text-[3vh] mr-5">Астафьев в историях</p>
+        </a>
+        </footer>
     
     
     
